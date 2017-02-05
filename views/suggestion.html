@@ -1,0 +1,29 @@
+<a href="#/">Back to Forum</a>
+<h1>{{ post.title }}</h1>
+<h4>{{ post.description }} </h4>
+
+
+<h3 id = 'comheader'> Comments </h3>
+
+<div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+<div class = 'row'>
+		<table id = 'commenttable'>
+		<tr>
+		<td>
+		<span class="glyphicon glyphicon-plus-sign" ng-click="upVoteComment(comment)"></span><span class="glyphicon glyphicon-minus-sign" ng-click="downVoteComment(comment)"></span></td>
+		<td rowspan = '2' id = 'scorebox'>{{ comment.upvotes }}</td>
+		<td rowspan = '2' id = 'combox'>{{ comment.body }}</td>
+		</tr>
+		
+		</table>
+
+</div>
+</div>
+
+<form ng-submit="addComment()" id = 'commentformid'>
+	<h3 class = 'commentclass'> Submit Your Comment </h3>
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Enter a Comment" ng-model="comment"></input>
+	</div>
+	<button type="submit" class="btn btn-primary">Post</button>
+</form>

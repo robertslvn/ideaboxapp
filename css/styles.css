@@ -1,0 +1,169 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+	background-color: #272A33;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+.form-control {
+	font-weight: 900;
+}
+
+
+.header {
+	color: #1F96C1;
+	padding: 1em 0em;
+	font-style: italic;
+}
+
+.header .fa {
+	color: #FFEE88;
+	display: inline;
+	text-align: left;
+	font-size: 8em;
+	margin-bottom: 0.125em;
+}
+
+.header h1 {
+	font-size: 5em;
+}
+
+.header .container {
+	border-bottom: 2px solid #fff;
+}
+
+
+
+/* Main */
+.main .post {
+	padding-bottom: 15px;
+	border-bottom: 0.5px solid #999;
+}
+
+.main h2 {
+	font-size: 30px;
+}
+
+.main p {
+	font-weight: 900;
+	padding-bottom: 2em;
+}
+
+.main .glyphicon-plus-sign {
+	color: #339966;
+
+}
+
+.main .glyphicon-minus-sign {
+	color: #800000;
+	display: block;
+}
+
+.glyphicon-minus-sign:hover {
+	cursor: pointer;
+}
+
+.glyphicon-plus-sign:hover {
+	cursor: pointer;
+}
+
+
+.main .pipe {
+	padding: 0em 0.5em;
+}
+
+.main a {
+	color: #1F96C1;
+}
+
+.main h3 {
+	color: #1F96C1;
+}
+
+.main button {
+	background-color: #024a60;
+	border-color: #024a60;
+}
+
+.upvoteline {
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 8px;
+
+}
+
+#commenttext {
+	margin: 0;
+	padding: 8px;
+
+}
+
+#commenttable td {
+	padding: 4px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: left;
+
+
+}
+
+#scorebox {
+	padding-left: 8px !important;
+}
+
+#combox {
+	padding-left: 18px !important;
+	padding-bottom: 0px !important;
+
+}
+
+.row {
+	margin-bottom: 11px;
+	margin-top: 4px;
+}
+
+#comheader {
+	margin-top: 35px;
+}
+
+.glyphicon-comment {
+	padding-right: 4px;
+}
+
+.commentclass {
+	font-size: 15px;
+}
+
+#myModal {
+	padding: 30px !important;
+}
+
+#commentformid {
+	margin-top: 50px;
+}
+
+#mainpic {
+	color: #1F96C1; 
+	font-size: 80px; 
+	margin-top: 20px;
+
+}
+
+#modalbg {
+	background-color: #202020;
+}
+
+#newideabutton {
+	margin-top: 10px;
+}
+
+#commenttarea {
+	height: 100px;
+}

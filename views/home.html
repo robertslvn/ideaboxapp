@@ -1,0 +1,44 @@
+
+<div class="post" ng-repeat="post in posts | orderBy:'-upvotes'">
+	
+
+	<div class = 'row'>
+		<table id = 'commenttable'>
+		<tr>
+		<td>
+		<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span><span class="glyphicon glyphicon-minus-sign" ng-click="downVote(post)"></span></td>
+		<td rowspan = '2' id = 'scorebox'>{{ post.upvotes }}</td>
+		<td rowspan = '2' id = 'combox'><h2>{{ post.title }}</h2></td>
+		</tr>
+		
+		</table>
+<a href="#/suggestion/{{ post.id }}"><span class="glyphicon glyphicon-comment"></span> View Comments</a>
+	</div>
+
+</div>
+
+
+
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" id = 'newideabutton'>Submit New Idea</button>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content" id = 'modalbg'>
+     <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <form ng-submit="addSuggestion()">
+	<h3> Submit New Idea </h3>
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Enter Idea Title" ng-model="title"></input>
+		<textarea class="form-control" placeholder="Enter More Details (optional)" ng-model="description" id = 'commenttarea'></textarea>
+	<button type="submit" class="btn btn-primary" id = 'postsub'>Post</button>
+</form>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
